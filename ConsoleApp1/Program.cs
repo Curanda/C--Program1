@@ -18,6 +18,11 @@ class Program
         // liczby.odejmijZespolone();
         // liczby.pomnozZespolone();
         // liczby.podzielZespolone();
+
+        // Zamowienie zamowienie1 = new Zamowienie( DateTime.Now, "Pan Benek", 5 );
+        // zamowienie1.dodajPozycje(new Sprzedaz("Mleko",3,10));
+        // zamowienie1.dodajPozycje("Chleb",2,5);
+        // zamowienie1.pokazZamowienie();
         
         return 0;
     }

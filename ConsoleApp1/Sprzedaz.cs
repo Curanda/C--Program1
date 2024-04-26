@@ -2,9 +2,9 @@ namespace ConsoleApp1;
 
 public class Sprzedaz
 {
-    private String p;
-    private Int32 a;
-    private Decimal sP;
+    private string p;
+    private int a;
+    private decimal sP;
 
     public Sprzedaz(string p, int a, decimal sP)
     {
@@ -13,8 +13,8 @@ public class Sprzedaz
         this.sP = sP;
     }
 
-    public void getPozycja<t>() where t : String, Int32, Decimal
+    public (string p, int a, decimal sP) getPozycja()
     {
-        return p, a, sP;
+        return (p, a, sP);
     }
 }
