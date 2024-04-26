@@ -13,6 +13,7 @@ public class Sprzedaz
         this.sP = sP;
     }
 
+    // uzylem covariant return, zeby zwrocic roznorodne typy
     public (string p, int a, decimal sP) getPozycja()
     {
         return (p, a, sP);
