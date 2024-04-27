@@ -2,35 +2,35 @@
 using System.Collections;
 using ConsoleApp1;
 
-class Program
+class Test
 {
     public static List<Produkt> produkty = new List<Produkt>();
     
     public static int Main(string[] args)
     {
-        
-        // utworzProdukt();
-        // utworzProdukt();
-        // wypiszProdukty();
-
-        // Zespolone liczby = new Zespolone();
-        // liczby.dodajZespolone();
-        // liczby.odejmijZespolone();
-        // liczby.pomnozZespolone();
-        // liczby.podzielZespolone();
-
-        // Zamowienie zamowienie1 = new Zamowienie( DateTime.Now, "Pan Benek", 5 );
-        // zamowienie1.dodajPozycje(new Sprzedaz("Mleko",3,10));
-        // zamowienie1.dodajPozycje("Chleb",2,5);
-        // zamowienie1.pokazZamowienie();
-
+        // zad.1
+        utworzProdukt();
+        utworzProdukt();
+        wypiszProdukty();
+        // zad.2
+        Zespolone liczby = new Zespolone();
+        liczby.dodajZespolone();
+        liczby.odejmijZespolone();
+        liczby.pomnozZespolone();
+        liczby.podzielZespolone();
+        // zad.3
+        Zamowienie zamowienie1 = new Zamowienie( DateTime.Now, "Pan Benek", 5 );
+        zamowienie1.dodajPozycje(new Sprzedaz("Mleko",3,10));
+        zamowienie1.dodajPozycje("Chleb",2,5);
+        zamowienie1.pokazZamowienie();
+        // zad.4
         RandomUtility randomizer = new RandomUtility();
         randomizer.randomInt(2,54);
         randomizer.randomDouble(2.33,76.77);
         randomizer.randomDecimal(1.99m, 7.85m);
         randomizer.randomString(6);
-        int[] tablica = new[] {1,5,7,2,8,0,4,5,2,43,67,53454,657,345,7657,3433,56,4};
-        randomizer.randomFromArray(6, tablica, true);
+        int[] tablica = new[] {1,5,7,2,8,0,4,5,2,43,67,53454,657,345,7657,3433,56,4,43,67,53454,657,345,7657,3433,1,5,7,2,8,0,4,5,2};
+        randomizer.randomFromArray(6, tablica, false);
         
         return 0;
     }
